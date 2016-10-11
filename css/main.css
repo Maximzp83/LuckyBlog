@@ -1,0 +1,200 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	background: #fff;
+	/*font-family: Oswald, arial, sans-serif;*/
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+/*------Общие стили-----*/
+
+a {	text-decoration: none; }
+
+ul {
+	margin: 0; padding: 0;
+}
+
+li {
+    list-style: none;
+    list-style-position: inside; 
+}
+
+.wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.container-main {
+	max-width: 1170px;
+	width: 60%;
+	margin: 0 auto;
+}
+
+/*----------Header Begin-------------*/
+
+.header {
+	text-align: center;
+	margin: 30px 0 40px 0;
+}
+
+.top-menu {
+	display: inline-block;
+	line-height: 42px;
+}
+
+.top-menu li {
+	display: inline-block;
+	margin: 0 22px;
+}
+
+.top-menu a {
+	font-size: 12px;
+	color: #8d8d8d;
+}
+
+form[name="user"] {
+	display: inline-block;
+	float: right;
+}
+
+button[type="button"] {
+	margin: 0; padding: 0;
+	display: inline-block;
+	/*position: absolute;*/
+	/*right: 20%;*/
+	width: 42px; height: 42px;
+	background: #1a8bd2 url("../images/icons/social-icons.png") no-repeat;
+	background-position: -130px 3px;
+	border-radius: 50%;
+	border-style: none;
+
+}
+
+button[type="button"]:hover {
+	background-color: #b210f9;
+}
+
+
+.logo {
+	width: 322px; height: 115px;
+	margin: 40px auto;
+	font-size: 50px;
+	line-height: 2.3em;
+    font-family: "BebasNeueLight";
+	background-color: #1d89d3;
+	color: #fff;
+}
+
+.header-social li {
+	display: inline-block;
+	margin: 0 12px;
+}
+
+.header-social a {
+	font-size: 10px;
+	color: #9c9c9c;
+}
+
+/*---------ARTICLES Begin--------*/
+
+/*------Posts-Menu Begin-------*/
+/*---------main-screen-----*/
+
+.posts-menu {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+.posts-menu .post-title a {
+	color: #fff;
+	border-bottom: 1px #fff solid;
+}
+
+.posts-menu .post-title a:hover {
+	border-bottom: hidden;
+}
+
+.main-screen {
+	margin: 0 auto;
+	max-width: 1164px; min-width: 500px;
+	width: 100%;
+    max-height: 598px; min-height: 200px;	
+	background: url("../images/screen-bg1.jpg") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.main-screen .container {
+	margin: 0 auto;
+	padding: 14.4% 0;
+}
+
+.main-screen .post-title {
+	/*margin: 0 auto;*/
+}
+
+.main-screen .post-name {
+    margin: 3% 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+/*---------main-screen end-----*/
+
+.latest-posts h2 {
+	display: inline-block;
+	margin: 65px auto;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px #000 solid;
+}
+
+.latest-posts .in-container2 {
+	display: inline-block;
+	margin-right: 4.6%;
+	margin-bottom: 15px;
+	width: 30%; 
+	max-width: 368px;  min-width: 200px;
+    height: 237px;
+}
+
+.latest-posts :last-child {
+	margin-right: 0;
+}
+
+.latest-posts .post-container1  {
+	background: url("../images/Cameras-bg1.jpg") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.latest-posts .post-container2  {
+	background: url("../images/Travel-bg1.jpg") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.latest-posts .post-container3  {
+	background: url("../images/Design-bg2.jpg") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.latest-posts .post-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.latest-posts .post-title {
+	font-size: 12px;
+	margin-top: 23%;
+}
+
+.latest-posts .post-container2 .post-title {
+	/*margin-top: 16%;*/
+}
+
+.latest-posts .post-name {
+	margin: 5% 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
