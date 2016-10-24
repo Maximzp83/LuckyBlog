@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<title>LuckyBlog</title>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 
 </head>
 <body>
@@ -11,7 +12,7 @@
 		<div class="container-main">
 			<header class='header'>
 			  <div class="container">
-				<ul class="top-menu">
+				<ul class="header-menu top-menu">
 					<li><a href="#"><span>About</span></a></li>
 					<li><a href="#"><span>Categories</span></a></li>
 					<li><a href="#"><span>Portfolio</span></a></li>
@@ -19,11 +20,11 @@
 					<li><a href="#"><span>Contacts</span></a></li>
 				</ul>
 				<form name="user" action="#" method="get">
-					<button type="button"></button>
+				    <button type="button" name="user-menu"></button>
 				</form>
 			  </div>
 				<div class="logo">LUCKYBLOG</div>
-				<ul class="header-social">
+				<ul class="header-menu social">
 					<li><a href="#"><span>Facebook</span></a></li>
 					<li><a href="#"><span>Twitter</span></a></li>
 					<li><a href="#"><span>Instagram</span></a></li>
@@ -33,50 +34,187 @@
 				</ul>
 			</header>
 			<article class="posts-menu">
-				<div class="main-screen">
-				  <div class="container">
-					<div class="arrow left-arrow"></div>
-					<div class="post-title"><a href="#">Lifestyle</a></div>
-					<div class="post-name">HOW TO GET<br/>A GREAT EXPERIENCE</div>
-					<time pubdate datetime="2016-11-19">November 19.2016</time>
-					<div class="arrow right-arrow"></div>
-				  </div>
+				<div class="main-post">
+					<div class="container">
+						<a class="link-container" href="#">
+							<div class="backgronund-container">
+								<form name="prev-post" action="#" method="get">
+									<button type="button" name="prev"></button>
+								</form>
+								<form name="next-post" action="#" method="get">
+							    		<button type="button" name="next"></button>
+								</form>
+						    	<div class="text-container">
+									<div class="post-tag">Lifestyle</div>
+									<div class="post-name">HOW TO GET<br/>A GREAT EXPERIENCE</div>
+									<time pubdate datetime="2016-11-19">November 19.2016</time>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
 				<div class="latest-posts">
-					<h2><span>Latest Posts</span></h2><br/>
+					<h2><span>Latest Posts</span></h2>
 					<div class="container">
-					    <div class="in-container2 post-container1"> 
-							<div class="post-container">
-								<div class="post-title"><a href="#">Camera</a></div>
-								<div class="post-name">Top 5 photocameras</div>
-								<time pubdate datetime="2015-11-21">November 21.2015</time>
+						<a class="link-container" href="#">
+						    <div class="backgronund-container post-container1"> 
+								<div class="text-container">
+									<div class="post-tag">Camera</div>
+									<div class="post-name">Top 5 photocameras</div>
+									<time pubdate datetime="2015-11-21">November 21.2015</time>
+								</div>
 							</div>
-						</div>
-						<div class="in-container2 post-container2"> 
-							<div class="post-container">
-								<div class="post-title"><a href="#">Travel</a></div>
-								<div class="post-name">Oldest Architecture <br>  in NYC</div>
-								<time pubdate datetime="2015-11-21">November 21.2015</time>
+						</a>
+						<a class="link-container" href="#">
+							<div class="backgronund-container post-container2"> 
+								<div class="text-container">
+									<div class="post-tag">Travel</div>
+									<div class="post-name">Oldest Architecture <br> in NYC</div>
+									<time pubdate datetime="2015-11-21">November 21.2015</time>
+								</div>
 							</div>
+						</a>
+						<a class="link-container" href="#">	
+							<div class="backgronund-container post-container3"> 
+								<div class="text-container">
+									<div class="post-tag">Design</div>
+									<div class="post-name">Best app for color editing</div>
+									<time pubdate datetime="2015-11-21">November 21.2015</time>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</article>
+			<div class="main-column">
+				<article class="main-posts">
+					<div class="post-container">
+						<div class="head post-tag">LIFESTYLE</div>
+						<h3 class="head post-name">How to build a studio in your apartment</h3>
+						<time pubdate datetime="2015-11-16" class='head'>November 16.2015</time>
+						<img src="images/studio-bg.jpg" alt="studio" width="100%">
+						<div class="post-content">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim. 
+							</p>
+							<p>Tupi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me luis quod ii legunt saepuis. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc potamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinita decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+							</p>
 						</div>
-						<div class="in-container2 post-container3"> 
-							<div class="post-container">
-								<div class="post-title"><a href="#">Design</a></div>
-								<div class="post-name">Best app for color editing</div>
-								<time pubdate datetime="2015-11-21">November 21.2015</time>
+						<div class="post-footer">
+							<form action="#" method="get">
+						        <button type="button" name="continue-reading">
+						         	<div>CONTINUE READING</div> 
+						         	<div class="button-arrow"></div>
+						        </button>						         
+							</form>
+							<div class="social-container">SHARE IT ON
+								<ul class="social-buttons">
+									<li><a href="http://facebook.com/" class="social-icon-small facebook" title="Facebook"></a></li>
+									<li><a href="http://twitter.com/" class="social-icon-small twitter" title="Twitter"></a></li>
+									<li><a href="http://tumblr.com/" class="social-icon-small tumblr" title="Tumblr"></a></li>
+									<li><a href="http://plus.google.com/" class="social-icon-small google-plus" title="Google+"></a></li>
+									<li><a href="/rss/" class="social-icon-small rss" title="RSS"></a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
-					
+					<div class="post-container">
+						<div class="head post-tag">TRAVEL</div>
+						<h3 class="head post-name">Lidkoeb - interior design of the month</h3>
+						<time pubdate datetime="2015-11-16" class='head'>November 16.2015</time>
+						<img src="images/Interior-design-bg.jpg" alt="studio" width="100%">
+						<div class="post-content">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim. 
+							</p>
+							<p>Tupi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me luis quod ii legunt saepuis. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc potamus parum claram.</p>
+						</div>
+						<div class="post-footer">
+							<form action="#" method="get">
+						         <button type="button" name="continue-reading">CONTINUE READING<span class="button-arrow"></span></button>						         
+							</form>
+							<div class="social-container">SHARE IT ON
+								<ul class="social-buttons">
+									<li><a href="http://facebook.com/" class="social-icon-small facebook" title="Facebook"></a></li>
+									<li><a href="http://twitter.com/" class="social-icon-small twitter" title="Twitter"></a></li>
+									<li><a href="http://tumblr.com/" class="social-icon-small tumblr" title="Tumblr"></a></li>
+									<li><a href="http://plus.google.com/" class="social-icon-small google-plus" title="Google+"></a></li>
+									<li><a href="/rss/" class="social-icon-small rss" title="RSS"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="other-posts">
+					<div class="post-container">
+						<img src="images/food1-bg.jpg" alt="foodimg">
+						<div class="head post-tag">FOOD</div>
+						<h3 class="head post-name">MEMORIES OF MILANO</h3>
+						<div class="post-content">
+							<p>Ad pri posse falli veritus. Sea ut suas habemus erroribus, idque dicat erant eu duo, ne his tractatos accommodare mediocritatem. Id mundi deserunt praesent est,tempor salutandi defenitionem quo ea, eum nemore partiendo eu.</p>
+						</div>
+						<div class="post-footer">
+							<a href="#">Read More</a>
+						    <time pubdate datetime="2015-11-13"><i>November 13.2015</i></time>  
+						</div>
+					</div>
+					<div class="post-container">
+						<img src="images/food2-bg.jpg" alt="foodimg">
+						<div class="head post-tag">FOOD</div>
+						<h3 class="head post-name">CAFE FIND: LAS VECINAS ECO-BAR</h3>
+						<div class="post-content">
+							<p>Ad pri posse falli veritus. Sea ut suas habemus erroribus, idque dicat erant eu duo, ne his tractatos accommodare mediocritatem. Id mundi deserunt praesent est,tempor salutandi defenitionem quo ea, eum nemore partiendo eu.</p>
+						</div>
+						<div class="post-footer">
+							<a href="#">Read More</a>
+						    <time pubdate datetime="2015-11-13"><i>November 12.2015</i></time>  
+						</div>
+					</div>
+					<div class="post-container">
+						<img src="images/art1-bg.jpg" alt="foodimg">
+						<div class="head post-tag">ART</div>
+						<h3 class="head post-name">PALAIS DE TOKYO PARIS</h3>
+						<div class="post-content">
+							<p>Ad pri posse falli veritus. Sea ut suas habemus erroribus, idque dicat erant eu duo, ne his tractatos accommodare mediocritatem. Id mundi deserunt praesent est,tempor salutandi defenitionem quo ea, eum nemore partiendo eu.</p>
+						</div>
+						<div class="post-footer">
+							<a href="#">Read More</a>
+						    <time pubdate datetime="2015-11-13"><i>November 11.2015</i></time>  
+						</div>
+					</div>
+					<div class="post-container">
+						<img src="images/music1-bg.jpg" alt="foodimg">
+						<div class="head post-tag">MUSIC</div>
+						<h3 class="head post-name">NOVEMBER SOUNDCLOUS PLAYLIST</h3>
+						<div class="post-content">
+							<p>Ad pri posse falli veritus. Sea ut suas habemus erroribus, idque dicat erant eu duo, ne his tractatos accommodare mediocritatem. Id mundi deserunt praesent est,tempor salutandi defenitionem quo ea, eum nemore partiendo eu.</p>
+						</div>
+						<div class="post-footer">
+							<a href="#">Read More</a>
+						    <time pubdate datetime="2015-11-13"><i>November 09.2015</i></time>  
+						</div>
+					</div>
+				</article>
+				<div class="older-posts">
+					<a href="#">  <     Older Posts</a>
+					<div></div>
 				</div>
-			</article>
-			<article class="posts"></article>
-			<article class="posts-small"></article>
-			<div class="older-posts"></div>
-			<aside class="aside"></aside>
+			</div>
+				
 		</div>
-		<footer class="footer"></footer>
+			<aside class="aside">aside sdfjkdfnedfkj</aside>
 	</div>
+		<footer class="footer">
+			<div class="img-container">
+				<img class="transparent-img" src="images/footer-img1.jpg" alt="footer-img">
+				<img class="transparent-img" src="images/footer-img2.jpg" alt="footer-img">
+				<img class="transparent-img" src="images/footer-img3.jpg" alt="footer-img">
+				<img src="images/footer-img4.jpg" alt="footer-img">
+				<img src="images/footer-img5.jpg" alt="footer-img">
+				<img src="images/footer-img6.jpg" alt="footer-img">
+			</div>
+			<div class="foolow-instargam"><a href="">FOLLOW US ON INSTAGRAM</a></div>
+			<div class="rights">&copy 2015 - ALL RIGHTS RESERVED</div>
+		</footer>
+
 </body>
 </html>
 
