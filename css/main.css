@@ -13,6 +13,10 @@ a {
 	color: #8460ea;
 }
 
+.read-more:hover {
+	text-decoration: underline;
+}
+
 ul {
 	margin: 0; padding: 0;
 }
@@ -48,6 +52,12 @@ time {
 	max-width: 1164px;
 	/*width: 60%;*/
 	margin: 0 auto;
+}
+
+.container-main:after {
+     content: "";
+     display: table;
+     clear: both;
 }
 
 /*----------Header Begin-------------*/
@@ -271,7 +281,7 @@ button[name="user-menu"]:hover {
 /*---------Main-post end-----*/
 
 .posts-menu .latest-posts {
-	margin-bottom: 50px;
+	margin-bottom: 53px;
 }
 
 .posts-menu .latest-posts h2 {
@@ -362,12 +372,12 @@ button[name="user-menu"]:hover {
 
 .main-posts .post-container:first-child {
 	margin-top: 0;
-	padding-top: 3px;
+	/*padding-top: 3px;*/
 }
 
 .main-posts .post-container {
 	margin-top: 50px;
-	padding-top: 3px;
+	/*padding-top: 3px;*/
 }
 
 .main-posts .post-tag {
@@ -556,9 +566,9 @@ button[name="user-menu"]:hover {
 	margin-top: 30px;
 }
 
-.other-posts .post-footer a:hover {
+/*.other-posts .post-footer a:hover {
 	text-decoration: underline;
-}
+}*/
 
 .other-posts .post-footer time {
 	color: #8d8d8c;
@@ -599,6 +609,52 @@ button[name="user-menu"]:hover {
 }
 /*---------------------*/
 /*------------MAIN COLUMN END------------*/
+
+/*------------ASIDE BEGIN------------*/
+
+.aside {
+	width: 23.8%;
+	float: right;
+	margin-left: 11%;
+	padding-top: 4px;
+	vertical-align: top;
+	font-family: 'LatoLatinWebRegular';
+}
+
+.aside .info-block {
+	margin-bottom: 57px;
+}
+
+.aside .block-title {
+	height: 44px;
+	margin-bottom: 17px;
+	text-align: center;
+	font-size: 12px;
+    line-height: 4.1;
+	background-color: #1f1f1f;
+	color: #e1e1e1;
+}
+
+/*-----------About me----*/
+
+.aside .about-me .block-title {
+	height: 48px;
+    line-height: 4.4;
+}
+
+.aside .about-me p {
+	margin-top: 23px;
+	padding: 0;
+	font-size: 12px;
+	color: #585858;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+
+
+
+
 
 /*------Footer Begin-------*/
 
@@ -647,14 +703,3 @@ button[name="user-menu"]:hover {
      display: table;
      clear: both;
 }*/
-
-
-
-.aside {
-	width: 24%;
-	float: right;
-	margin-left: 11%;
-	vertical-align: top;
-}
-
-
