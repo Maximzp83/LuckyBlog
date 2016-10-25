@@ -366,6 +366,75 @@
   z-index: 298;
 }
 
+.Ad_Banner {
+  font-size: 23px;
+  font-family: "OpenSans";
+  color: rgb(165, 165, 165);
+  line-height: 1.565;
+  text-align: right;
+  -moz-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  -webkit-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  -ms-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  position: absolute;
+  left: 1348.286px;
+  top: 2456.502px;
+  z-index: 239;
+}
+
+
+.Dubai_is_building_smart_fake_palm_trees_that_ch {
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgb(31, 31, 31);
+  line-height: 1.667;
+  text-align: left;
+  -moz-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  -webkit-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  -ms-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  position: absolute;
+  left: 1269.146px;
+  top: 2736.956px;
+  width: 253.862px;
+  height: 71.072px;
+  z-index: 231;
+}
+
+
+.Moxine_Headphone_by_Andy_Meerow {
+  font-size: 13px;
+  font-family: "Latha";
+  color: rgb(40, 40, 40);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  -webkit-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  -ms-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  position: absolute;
+  left: 1371.44px;
+  top: 3113.51px;
+  width: 159.121px;
+  height: 23.6px;
+  z-index: 201;
+}
+
+
+.November_16__2015___ {
+  font-size: 11px;
+  font-family: "OpenSans";
+  color: rgb(100, 100, 100);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  -webkit-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  -ms-transform: matrix( 1,0,0,0.99982437036777,0,0);
+  position: absolute;
+  left: 1378.206px;
+  top: 3149.223px;
+  z-index: 202;
+}
+
+
+
 
 .Fashion {
   font-size: 11px;
@@ -399,3 +468,4 @@
   top: 5057.499px;
   z-index: 338;
 }
+

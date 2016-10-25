@@ -36,7 +36,7 @@ time {
 }
 
 .wrapper {
-	width: 1920px;
+	width: 100%;
 	max-width: 1918px;
 	margin: 0 auto;
 }
@@ -296,6 +296,7 @@ button[name="user-menu"]:hover {
 .posts-menu .latest-posts .container {
 	display: flex;
 	justify-content: space-between;
+	flex-flow: row wrap;
 }
 
 .posts-menu .latest-posts .link-container {
@@ -471,6 +472,10 @@ button[name="user-menu"]:hover {
 
 /*-------------*/
 
+.main-posts .post-footer {
+	flex-flow: row wrap;
+}
+
 .main-posts .post-footer .social-container {
 	width: 256px;
 	font-size: 15px;
@@ -479,6 +484,7 @@ button[name="user-menu"]:hover {
 .main-posts .post-footer .social-buttons {
 	width: 150px;
 	justify-content: space-around;
+	flex-flow: row wrap;
 }
 
 .main-posts .post-footer .social-buttons a {
@@ -621,10 +627,6 @@ button[name="user-menu"]:hover {
 	font-family: 'LatoLatinWebRegular';
 }
 
-.aside .info-block {
-	margin-bottom: 57px;
-}
-
 .aside .block-title {
 	height: 44px;
 	margin-bottom: 17px;
@@ -637,9 +639,17 @@ button[name="user-menu"]:hover {
 
 /*-----------About me----*/
 
+.aside .about-me {
+	margin-bottom: 57px;
+}
+
 .aside .about-me .block-title {
 	height: 48px;
     line-height: 4.4;
+}
+
+.aside .about-me img {
+	max-width: 100%;
 }
 
 .aside .about-me p {
@@ -651,10 +661,221 @@ button[name="user-menu"]:hover {
 	line-height: 1.5em;
 }
 
+/*-----------Subscribe&Follow----*/
+
+.aside .subscribe {
+	margin-bottom: 53px;
+}
+
+.subscribe .social-container {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	margin-top: 43px;
+	padding: 0 7px;
+}
+
+.subscribe .social-container .social-icon {
+	width: 37px; height: 37px;
+	background: #1a8bd2 url("../images/icons/social-icons.png") no-repeat;
+	border-radius: 50%
+}
+
+.subscribe .social-container .facebook {
+	background-position: 6px -48px;
+}
+.subscribe .social-container .twitter {
+	background-position: -23px -48px;
+}
+.subscribe .social-container .youtube {
+	background-position: -50px -48px;
+}
+.subscribe .social-container .linkedin {
+	background-position: -80px -48px;
+}
+.subscribe .social-container .pinterest {
+	background-position: -109px -48px;
+}
+
+.subscribe .social-container .social-icon:hover {
+	background-color: #ba10f9;
+}
+
+/*-----------Pinterest----*/
+
+.pinterest-block {
+	margin-bottom: 38px;
+}
+
+.pinterest-block .vidgets-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.pinterest-block .vidgets-container li {
+	width: 88px; height: 88px;
+	margin-bottom: 7px;
+	background-color: #406a96; 
+}
+
+.pinterest-block .vidgets-container a:hover {
+	opacity: 0.7;
+}
+
+/*-----------*/
+.banners-container .banner-place {
+	position: relative;
+	width: 100%; height: 277px;
+	min-width: 50%;
+	background-color: #ebebeb;
+	margin-top: 27px;
+}
+
+.banners-container .banner-place div {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	border: 1px solid #b3b3b3;
+	margin: 13.2%;
+	padding-top: 28%;
+	font-family: "OpenSansLight";
+	font-size: 23px;
+	text-align: center;
+	color: #a5a5a5;
+}
+
+/*-----------Twitter News----*/
+
+.twitternews-block {
+	margin-bottom: 40px;
+}
+
+.twitternews-block .block-title {
+	margin-bottom: 13px;
+}
+
+.twitternews-block .twitter-news {
+	margin-bottom: 25px;
+	font-family: 'LatoLatinWebRegular';
+	font-size: 12px;
+	line-height: 1.6em;
+}
+
+.twitternews-block .twitter-news .news-link a {
+	color: #117cea;
+}
+
+.twitternews-block .twitter-news .news-time {
+	color: #919191;
+}
+
+/*-----------Aside Latest posts----*/
+
+.latest-posts-block {
+	margin-bottom: 39px;
+}
+
+.latest-posts-block .block-title {
+	margin-bottom: 35px;
+}
+
+.latest-posts-block .post-container {
+	margin-top: 20px;
+	padding-bottom: 12px;
+	border-bottom: 2px solid #e3e3e3;
+}
+
+.latest-posts-block .post-container img,
+.latest-posts-block .post-container div,
+.latest-posts-block .post-container time {
+	display: inline-block;
+}
+
+.latest-posts-block .post-container .post-content {
+	width: 62%;
+	vertical-align: top;
+	margin-left: 10px;
+
+}
+
+.latest-posts-block .post-container .post-text {
+	font-family:"Latha";
+	font-size: 13px;
+	color: #363636;
+	line-height: 1.2;
+	margin-bottom: 2px;
+}
+
+.latest-posts-block .post-container .post-time {
+	font-family: "OpenSansRegular";
+	font-size: 11px;
+	color: #838383;
+}
+
+/*-----------Aside Tags----*/
+
+.tags {
+	/*margin-right: -5px;*/
+}
+
+.tags .tags-list  {
+	display: flex;
+	justify-content: flex start;
+	flex-flow: row wrap;
+	margin-right: -5px;
+}
+
+.tags .tags-list li a {
+	display: inline-block;
+	font-family: "OpenSansRegular";
+	font-size: 11px;
+	line-height: 2.9;
+	color: #282828;
+	text-align: center;
+	background-color: #e5e5e5;
+	border-radius: 20px;
+	margin: 0 3px 8px 0;
+}
+
+.tags .tags-list a:hover {
+	color: #fff;
+	background-color: #ba10f9;
+} 
 
 
-
-
+.tags .tags-list li .tag-size-1 {
+	width: 40px;
+}
+.tags .tags-list li .tag-size-2 {
+	width: 50px;
+}
+.tags .tags-list li .tag-size-3 {
+	width: 60px;
+}
+.tags .tags-list li .tag-size-4 {
+	width: 73px;
+}
+.tags .tags-list li .tag-size-5 {
+	width: 80px;
+}
+.tags .tags-list li .tag-size-6 {
+	width: 90px;
+}
+.tags .tags-list li .tag-size-7 {
+	width: 100px;
+}
+.tags .tags-list li .tag-size-8 {
+	width: 105px;
+}
+.tags .tags-list li .tag-size-9 {
+	width: 113px;
+}
+.tags .tags-list li .tag-size-10 {
+	width: 120px;
+}
+.tags .tags-list li .tag-size-11 {
+	width: 125px;
+}
 
 /*------Footer Begin-------*/
 
