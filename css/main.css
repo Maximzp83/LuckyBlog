@@ -47,11 +47,11 @@ time {
      clear: both;
 }
 
-
 .container-main {
 	max-width: 1164px;
 	/*width: 60%;*/
 	margin: 0 auto;
+	position: relative;
 }
 
 .container-main:after {
@@ -119,16 +119,6 @@ button[name="user-menu"]:hover {
 				-ms-linear-gradient(135deg, #ba10f9, #1a8bda);
 				-o-linear-gradient(135deg, #ba10f9, #1a8bda);
 	color: #fff;
-}
-
-.header-social {
-	/*width: 420px;*/
-	/*margin: 0 auto;*/
-	/*display: flex;*/
-	/*justify-content: center;*/
-	/*justify-content: space-between;*/
-	/*justify-content: space-around;*/
-	/*margin: 0 12px;*/
 }
 
 .header .social li {
@@ -362,6 +352,7 @@ button[name="user-menu"]:hover {
 /*------------MAIN COLUMN BEGIN------------*/
 .main-column {
 	width: 65%;
+	min-width: 340px;
 	float: left;
 }
 
@@ -425,16 +416,17 @@ button[name="user-menu"]:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-flow: row wrap;
     font-family: 'LatoLatinWebRegular';
 	margin-top: 64px;
 }
 
-.main-posts .post-footer form,
-.main-posts .post-footer div,
-.main-posts .post-footer ul,
-.main-posts .post-footer li
-.main-posts .post-footer button {
+.main-posts .post-footer li,
+.main-posts .post-footer  button[name="continue-reading"],
+.main-posts .post-footer .social-container 
+{
 	display: flex;
+	display: -moz-box;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -442,10 +434,7 @@ button[name="user-menu"]:hover {
 /*------Button----*/
 
 .main-posts .post-footer button[name="continue-reading"] {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	/*text-align: left;*/
+	text-align: left;
 	padding: 3px 9px 0 17px;
 	width: 240px;
 	height: 42px;
@@ -453,6 +442,11 @@ button[name="user-menu"]:hover {
 	color: #fff;
 	font-family: 'LatoLatinWebRegular';
 	font-size: 14px;
+}
+
+.main-posts .post-footer button div {
+	display: flex;
+	display: -moz-box; 
 }
 
 .main-posts .post-footer button[name="continue-reading"] .button-arrow {
@@ -472,17 +466,15 @@ button[name="user-menu"]:hover {
 
 /*-------------*/
 
-.main-posts .post-footer {
-	flex-flow: row wrap;
-}
-
 .main-posts .post-footer .social-container {
 	width: 256px;
 	font-size: 15px;
+	display: flex;
 }
 
 .main-posts .post-footer .social-buttons {
 	width: 150px;
+	display: flex;
 	justify-content: space-around;
 	flex-flow: row wrap;
 }
@@ -622,6 +614,7 @@ button[name="user-menu"]:hover {
 	width: 23.8%;
 	float: right;
 	margin-left: 11%;
+	/*margin-left: 60%;*/
 	padding-top: 4px;
 	vertical-align: top;
 	font-family: 'LatoLatinWebRegular';
@@ -880,21 +873,35 @@ button[name="user-menu"]:hover {
 /*------Footer Begin-------*/
 
 .footer {
-	width: 100%;
+	
 	width: 1918px;
 	max-width: 1918px;
 	margin-top: 66px;
 	position: relative;
+	width: 100%;
+	/*--container-width: width;*/
 }
 
 .footer .img-container {
-	display: flex;
-	flex-flow: row nowrap;
+	
+	display:  -webkit-inline-flex;
+	display:  inline-flex;
+	overflow: hidden;
+	width: 100%;
+	/*height: calc(var(--container-width)*0.1678);*/
+	/*height: calc(same-as-width*0.1678px);*/
+	height: calc(100%*0.1678);
 }
 
-.footer img {
+.footer .img-container img {
+
+	min-width: 100px;  /*-----Если надо чтобы в Chrome картинки сжимались по ширине---*/
 	max-width: 324px;
+	/*width: 16.6%;*/
+	/*height: 100%;*/
+
 }
+
 
 .footer .transparent-img {
 	opacity: 0.28;
@@ -923,4 +930,5 @@ button[name="user-menu"]:hover {
      content: "";
      display: table;
      clear: both;
-}*/
+}
+*/
