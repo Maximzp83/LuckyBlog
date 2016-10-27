@@ -39,6 +39,7 @@ time {
 	width: 100%;
 	max-width: 1918px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .wrapper:after {
@@ -49,9 +50,9 @@ time {
 
 .container-main {
 	max-width: 1164px;
-	/*width: 60%;*/
+	width: 95%;
 	margin: 0 auto;
-	position: relative;
+	/*position: relative;*/
 }
 
 .container-main:after {
@@ -60,17 +61,21 @@ time {
      clear: both;
 }
 
-/*----------Header Begin-------------*/
+/*============Header Begin==============*/
 
 .header {
 	text-align: center;
-	margin: 36px 0 35px;
+	margin: 25px 0 34px;
 	font-family: 'LatoLatinWebRegular';
 	position: relative;
 }
 
+/*-------------Top Menu------------------*/
+
 .top-menu {
-	line-height: 3.0em;
+	line-height: 3.3em;
+	color: #8d8d8d;
+	position: relative;
 }
 
 .top-menu li {
@@ -83,10 +88,71 @@ time {
 	color: #8d8d8d;
 }
 
-.header-menu a:hover {
-    text-decoration: underline; 
-	color: #8d8d8d;
+.top-menu .sub-menu a {
+	font-family: "OpenSansRegular";
+    font-size: 17px;
+    line-height: 3.5;
+    color: #bfbfbf;
 }
+
+.header .header-menu a:hover {
+    /*text-decoration: underline; */
+	color: #7148e7;
+}
+
+
+.header .top-menu .sub-menu {
+	position: absolute;
+	z-index: 10;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	max-width: 1918px;
+	text-align: left;
+	padding: 16px 0 32px;
+    background: linear-gradient(#ba10f9, #1a8bda);
+	            -webkit-linear-gradient(#ba10f9, #1a8bda);
+				-moz-linear-gradient( #ba10f9, #1a8bda);
+				-ms-linear-gradient( #ba10f9, #1a8bda);
+				-o-linear-gradient( #ba10f9, #1a8bda);
+	visibility: hidden;
+	opacity: 0;
+}
+
+.header .top-menu .sub-menu:before {
+	display: block;
+	position: absolute;
+	content: "";
+	width: 0;
+    height: 0;
+    border-bottom: 12px solid #ba10f9;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: -12px;
+}
+
+.header .top-menu .sub-menu-2:before {
+	left: 40.2%;
+}
+.header .top-menu .sub-menu-3:before {
+	left: 49.1%;
+}
+
+.header .top-menu li:hover .sub-menu {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.header .top-menu .sub-menu a:hover {
+	color: #fff;
+}
+
+
+/*-------------Top Menu End------------------*/
+
+
+
 
 form[name="user"] {
 	position: absolute;
@@ -109,7 +175,7 @@ button[name="user-menu"]:hover {
 
 .logo {
 	width: 322px; height: 114px;
-	margin: 23px auto 39px auto;
+	margin: 21px auto 39px auto;
 	font-size: 72px;
 	line-height: 1.57em;
     font-family: "Bebas-Neue-Light";
@@ -126,12 +192,12 @@ button[name="user-menu"]:hover {
 	margin: 0 0.73em;
 }
 
-.header .social a span {
+.header .social a {
 	font-size: 12px;
 	color: #9c9c9c;
 }
 
-/*---------ARTICLES Begin--------*/
+/*==============ARTICLES Begin=============*/
 
 /*------Posts-Menu Begin-------*/
 
