@@ -38,9 +38,156 @@ time {
 .wrapper {
 	width: 100%;
 	max-width: 1918px;
-	margin: 0 auto;
+	margin: 34px auto 0;
+	position: relative;
+	/*width: 1918px;*/
+}
+
+/*-------Transition rules---------*/
+
+.posts-menu .post-name:after,
+.posts-menu .main-post form,
+.posts-menu .link-container:hover
+ {
+	-webkit-transition: .7s;
+    -moz-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+}
+
+.header .social-links a:not(:hover),
+button[name="user-menu"]:not(:hover),
+.wrapper .top-menu .sub-menu a:not(:hover),
+.wrapper .top-menu li a:not(:hover),
+.subscribe .social-container .social-icon:not(:hover),
+.posts-menu .link-container:not(:hover),
+.main-posts .post-footer button[name="continue-reading"]:not(:hover),
+.pinterest-block .vidgets-container a:not(:hover)
+
+{
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+
+/*-------------Top Menu------------------*/
+
+.wrapper .top-menu a:hover,
+.header .social-links a:hover {
+	color: #7148e7;
+	text-decoration: underline;
+}
+
+.wrapper .top-menu a:focus {
+	color: #7148e7;
+}
+
+.wrapper .top-menu {
+	text-align: center;
+	line-height: 3.3em;
+	color: #8d8d8d;
 	position: relative;
 }
+
+.wrapper .top-menu li {
+	display: inline-block;
+	padding: 0 1.29em;
+}
+
+.wrapper .top-menu li a {
+	font-size: 15px;
+	color: #8d8d8d;
+	font-family: 'LatoLatinWebRegular';
+}
+
+.wrapper .top-menu .sub-menu a {
+	font-family: "OpenSansRegular";
+    font-size: 17px;
+    line-height: 0;
+    color: #bfbfbf;
+}
+
+.wrapper .top-menu .sub-menu li {
+	padding: 0 2%;
+	margin: 2.2% 0;
+	line-height: 1.2;
+}
+
+.wrapper .top-menu .sub-menu,
+.wrapper .top-menu .sub-menu:before,
+.wrapper .sub-menu-background {
+	-webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+
+.wrapper .top-menu .sub-menu {
+	position: absolute;
+	width: 95%;
+	max-width: 1164px;
+	z-index: 100;
+	top: 100%;
+	left: 0;
+	right: 0;
+	text-align: left;
+	padding: 16px 0 32px;
+	margin: 0 auto;
+   	visibility: hidden;
+	opacity: 0;
+}
+
+.wrapper .top-menu .sub-menu:before {
+	display: block;
+	z-index: 100;
+	position: absolute;
+	content: "";
+	width: 0;
+    height: 0;
+    border-bottom: 12px solid #ba10f9;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: -12px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.wrapper .top-menu .sub-menu-2:before {
+	left: 40.2%;
+}
+.wrapper .top-menu .sub-menu-3:before {
+	left: 49.1%;
+}
+
+.wrapper .sub-menu-background {
+	position: absolute;
+	z-index: 90;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 227px;
+    background: linear-gradient(#ba10f9, #1a8bda);
+	            -webkit-linear-gradient(#ba10f9, #1a8bda);
+				-moz-linear-gradient( #ba10f9, #1a8bda);
+				-ms-linear-gradient( #ba10f9, #1a8bda);
+				-o-linear-gradient( #ba10f9, #1a8bda);
+	visibility: hidden;
+	opacity: 0;
+}
+
+.wrapper .top-menu a:focus ~ .sub-menu,
+.wrapper .top-menu a:focus ~ .sub-menu:before,
+.wrapper .top-menu a:focus ~ .sub-menu-background {
+	visibility: visible;
+	opacity: 1;
+}
+
+.wrapper .top-menu .sub-menu a:hover {
+	color: #fff;
+}
+
+
+/*-------------Top Menu End------------------*/
 
 .wrapper:after {
      content: "";
@@ -62,101 +209,18 @@ time {
 }
 
 /*============Header Begin==============*/
+ 
 
 .header {
 	text-align: center;
-	margin: 25px 0 34px;
+	margin: 21px 0 34px;
 	font-family: 'LatoLatinWebRegular';
 	position: relative;
 }
 
-/*-------------Top Menu------------------*/
-
-.top-menu {
-	line-height: 3.3em;
-	color: #8d8d8d;
-	position: relative;
-}
-
-.top-menu li {
-	display: inline-block;
-	margin: 0 1.29em;
-}
-
-.top-menu a {
-	font-size: 15px;
-	color: #8d8d8d;
-}
-
-.top-menu .sub-menu a {
-	font-family: "OpenSansRegular";
-    font-size: 17px;
-    line-height: 3.5;
-    color: #bfbfbf;
-}
-
-.header .header-menu a:hover {
-    /*text-decoration: underline; */
-	color: #7148e7;
-}
-
-
-.header .top-menu .sub-menu {
-	position: absolute;
-	z-index: 10;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	max-width: 1918px;
-	text-align: left;
-	padding: 16px 0 32px;
-    background: linear-gradient(#ba10f9, #1a8bda);
-	            -webkit-linear-gradient(#ba10f9, #1a8bda);
-				-moz-linear-gradient( #ba10f9, #1a8bda);
-				-ms-linear-gradient( #ba10f9, #1a8bda);
-				-o-linear-gradient( #ba10f9, #1a8bda);
-	visibility: hidden;
-	opacity: 0;
-}
-
-.header .top-menu .sub-menu:before {
-	display: block;
-	position: absolute;
-	content: "";
-	width: 0;
-    height: 0;
-    border-bottom: 12px solid #ba10f9;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    top: -12px;
-}
-
-.header .top-menu .sub-menu-2:before {
-	left: 40.2%;
-}
-.header .top-menu .sub-menu-3:before {
-	left: 49.1%;
-}
-
-.header .top-menu li:hover .sub-menu {
-	visibility: visible;
-	opacity: 1;
-}
-
-
-.header .top-menu .sub-menu a:hover {
-	color: #fff;
-}
-
-
-/*-------------Top Menu End------------------*/
-
-
-
-
 form[name="user"] {
 	position: absolute;
-	right: 0; top: 1px;
+	right: 0; top: -65px;
 }
 
 button[name="user-menu"] {
@@ -187,12 +251,12 @@ button[name="user-menu"]:hover {
 	color: #fff;
 }
 
-.header .social li {
+.header .social-links li {
 	display: inline-block;
 	margin: 0 0.73em;
 }
 
-.header .social a {
+.header .social-links a {
 	font-size: 12px;
 	color: #9c9c9c;
 }
@@ -217,16 +281,6 @@ button[name="user-menu"]:hover {
    content: "";
    border-bottom: 1px solid #fff; 
 	opacity: 0;
-}
-
-.posts-menu .link-container:hover,
-.posts-menu .link-container:not(:hover),
-.posts-menu .post-name:after,
-.posts-menu .main-post form {
-	-webkit-transition: .7s;
-    -moz-transition: .7s;
-    -o-transition: .7s;
-    transition: .7s;
 }
 
 .posts-menu .link-container:hover {
@@ -822,6 +876,10 @@ button[name="user-menu"]:hover {
 
 .twitternews-block .twitter-news .news-link a {
 	color: #117cea;
+}
+
+.twitternews-block .twitter-news .news-link a:hover {
+	text-decoration: underline;
 }
 
 .twitternews-block .twitter-news .news-time {
